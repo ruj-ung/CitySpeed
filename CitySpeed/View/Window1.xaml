@@ -1,0 +1,12 @@
+﻿<Window x:Class="MVVM_RadioButton.View.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="350" Width="525">
+    <StackPanel Orientation="Vertical" Margin="20">
+        <RadioButton Width="150" Content="India" Name="cbIndia" IsChecked="True"></RadioButton>
+        <RadioButton Width="150" Content="USA" Name="cbUSA"></RadioButton>
+        <RadioButton Width="150" Content="UK"  Name="cbUK"></RadioButton>
+        <RadioButton Width="150" Content="China" Name="cbChina"></RadioButton>
+        <TextBox Width="120" Margin="20"></TextBox>
+    </StackPanel>
+</Window>

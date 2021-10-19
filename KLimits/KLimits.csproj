@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>KKU.ico</ApplicationIcon>
+    <Win32Resource />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Category2\FullyBuiltUp.png" >
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>      
+    </Resource>
+    <Resource Include="Category2\PartiallyBuiltUp.png" >
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>      
+    </Resource>
+    <Resource Include="Category2\SparselyBuiltUp.png" >
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>      
+    </Resource>
+    <Resource Include="Category2\Hamlet.png" >
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>      
+    </Resource>
+    <Resource Include="Category2\Rural.png" >
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>      
+    </Resource>
+    <Resource Include="KKU.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Category1\" />
+    <Folder Include="Category2\" />
+    <Folder Include="Category3\" />
+    <Folder Include="Category4\" />
+    <Folder Include="Category5\" />
+    <Folder Include="Category6\" />
+  </ItemGroup>
+
+</Project>
