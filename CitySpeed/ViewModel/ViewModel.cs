@@ -98,6 +98,16 @@ namespace MVVM_RadioButton.ViewModel
             set { _CSL = value; OnPropertyChange("CSL"); }
         }
 
+       public event PropertyChangedEventHandler PropertyChanged;
+
+        private void OnPropertyChange(string propertyname)
+        {
+            if (PropertyChanged !=null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyname));
+            }
+        }
+
         public ViewModel()
         {
             NL = 50;
@@ -113,17 +123,7 @@ namespace MVVM_RadioButton.ViewModel
             MyCommand = new RelayCommand(executemethod, canexecutemethod);
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void OnPropertyChange(string propertyname)
-        {
-            if (PropertyChanged !=null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyname));
-            }
-        }
-
-
+ 
 
         private bool canexecutemethod(object parameter)
         {
