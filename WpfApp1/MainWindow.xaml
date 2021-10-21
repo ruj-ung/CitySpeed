@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"       xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:MainPageViewModel x:Name="ViewModel"/>
+    </Window.DataContext>
+    <Grid>
+        <StackPanel Name="sp1" >
+
+            <TextBox Name="txtFirstName"                     
+                 Text="{Binding user.FirstName}" />
+
+            <TextBox Name="txtLastName"                     
+                 Text="{Binding user2.LastName}" />
+            <Image x:Name="image" Height="172" Width="296"/>
+
+
+        </StackPanel>
+        <Button x:Name="eye_button" BorderBrush="{x:Null}" Margin="435,248,292,119" Click="eye_button_Click"  >
+            <materialDesign:PackIcon Kind="ImageAdd" Foreground="Black" Width="20" Height="20" />
+        </Button>
+    </Grid>
+</Window>

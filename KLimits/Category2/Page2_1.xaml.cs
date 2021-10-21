@@ -36,5 +36,37 @@ namespace KLimits.Category2
             MainWindow mainwnd = (MainWindow)System.Windows.Application.Current.MainWindow;
             mainwnd.MainFrame.Content = mainwnd.page2_2;
         }
+
+
+        private void RadioButton1_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwnd = (MainWindow)System.Windows.Application.Current.MainWindow;
+            mainwnd.parameters.DevelopmentType = 1;
+        }
+
+
+        private void RadioButton2_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwnd = (MainWindow)System.Windows.Application.Current.MainWindow;
+            mainwnd.parameters.DevelopmentType = 2;
+        }
+
+        private void RadioButton3_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwnd = (MainWindow)System.Windows.Application.Current.MainWindow;
+            mainwnd.parameters.DevelopmentType = 3;
+        }
+
+
+        private void RadioButton4_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwnd = (MainWindow)System.Windows.Application.Current.MainWindow;
+            mainwnd.parameters.DevelopmentType = 4;
+        }
+        private void RadioButton5_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwnd = (MainWindow)System.Windows.Application.Current.MainWindow;
+            mainwnd.parameters.DevelopmentType = 5;
+        }
     }
 }

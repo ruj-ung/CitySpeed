@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Suggested Speed">
 
-    <Grid>
+    <Grid x:Name="print">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="0"/>
@@ -28,9 +28,7 @@
                 Width="210"
                 Height="300">
                 <Grid>
-                    <TextBlock x:Name="ResultSpeed" Canvas.Left="49" Canvas.Top="75" FontSize="100" RenderTransformOrigin="0.519,0.51" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        80
-                    </TextBlock>
+                    <TextBlock x:Name="ResultSpeed" Canvas.Left="49" Canvas.Top="75" FontSize="85" RenderTransformOrigin="0.519,0.51" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial Black" Text="100"/>
                     <!--Draws a circle with a blue interior and a black outline.-->
                     <Ellipse
                     Width="200"
@@ -39,11 +37,10 @@
                     StrokeThickness="20"
                     Canvas.Top="45" Canvas.Left="3" HorizontalAlignment="Center" VerticalAlignment="Center" />
                 </Grid>
-
             </Border>
-
+            <Label x:Name="trace" Height="35" FontSize="16" Foreground="White"/>
         </StackPanel>
-        <Button x:Name="buttonNext" Content="Next" Height="30" Width="50" VerticalAlignment="Bottom" HorizontalAlignment="Right" Opacity="0.5" Click="buttonNext_Click"/>
+        <Button x:Name="buttonReport" Content="Report&amp;Print" Height="30" Width="87" VerticalAlignment="Bottom" HorizontalAlignment="Right" Opacity="0.5" Click="buttonReport_Click"/>
         <Button x:Name="buttonBack" Content="Back" Height="30" Width="50" VerticalAlignment="Bottom" HorizontalAlignment="Left" Opacity="0.5" Click="buttonBack_Click"/>
     </Grid>
 </Page>

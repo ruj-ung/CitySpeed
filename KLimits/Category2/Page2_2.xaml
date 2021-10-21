@@ -1,12 +1,17 @@
-﻿<Page x:Class="KLimits.Category2.Page2_2"
+﻿<Page
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:KLimits.Category2"
+      xmlns:Model="clr-namespace:KLimits.Model" x:Class="KLimits.Category2.Page2_2"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="2.2 Roadside access frequency">
+
+    <Page.DataContext>
+        <Model:RoadsideAccessFreqquency/>
+    </Page.DataContext>
 
     <Grid>
         <Grid.Background>
@@ -16,11 +21,12 @@
             </LinearGradientBrush>
         </Grid.Background>
         <StackPanel Width="700">
-            <TextBlock Foreground="Yellow" Text="2.2	Roadside access frequency" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="32"/>
+            <TextBlock Foreground="Yellow" Text="2.2 Roadside access frequency" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="32"/>
             <TextBlock Foreground="White" FontSize="18" TextWrapping="Wrap" Margin="0,5" 
                        Text="Please input the number of counted accesses." />
             <Grid Width="250">
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="35"/>
                     <RowDefinition Height="35"/>
                     <RowDefinition Height="35"/>
                     <RowDefinition Height="35"/>
@@ -36,83 +42,72 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <!--<Border BorderThickness="2" BorderBrush="Wheat" Margin="0">-->
-                    <TextBlock Grid.Row="0" Grid.Column="0" Foreground="White" FontSize="18" VerticalAlignment="Center" TextAlignment="Center"
+                <TextBlock Grid.Row="0" Grid.Column="0" Foreground="White" FontSize="18" VerticalAlignment="Center" TextAlignment="Center"
                            Width="150" Text="Type of Access" Background="#FFD05D5D" />
                 <!--</Border>-->
                 <TextBlock Grid.Row="0" Grid.Column="1" Foreground="White" FontSize="18" VerticalAlignment="Center" TextAlignment="Center" Margin="1,0,0,0"
                        Text="Number"  Width="100" Background="#FFD05D5D"/>
-                    <TextBlock Grid.Row="1" Grid.Column="0" Foreground="White" FontSize="18" TextWrapping="Wrap" HorizontalAlignment="Center"
+                <TextBlock Grid.Row="1" Grid.Column="0" Foreground="White" FontSize="18" TextWrapping="Wrap" HorizontalAlignment="Center"
                        VerticalAlignment="Center" Text="Type A" />
-                    <TextBlock Grid.Row="2" Grid.Column="0" Foreground="White" FontSize="18" TextWrapping="Wrap" HorizontalAlignment="Center"
+                <TextBlock Grid.Row="2" Grid.Column="0" Foreground="White" FontSize="18" TextWrapping="Wrap" HorizontalAlignment="Center"
                        VerticalAlignment="Center" Text="Type B" />
-                    <TextBlock Grid.Row="3" Grid.Column="0" Foreground="White" FontSize="18" TextWrapping="Wrap" HorizontalAlignment="Center"
+                <TextBlock Grid.Row="3" Grid.Column="0" Foreground="White" FontSize="18" TextWrapping="Wrap" HorizontalAlignment="Center"
                        VerticalAlignment="Center" Text="Type C" />
-                    <TextBlock Grid.Row="4" Grid.Column="0" Foreground="White" FontSize="18" TextWrapping="Wrap" HorizontalAlignment="Center"
+                <TextBlock Grid.Row="4" Grid.Column="0" Foreground="White" FontSize="18" TextWrapping="Wrap" HorizontalAlignment="Center"
                        VerticalAlignment="Center" Text="Type D" />
-                    <TextBlock Grid.Row="5" Grid.Column="0" Foreground="White" FontSize="18" TextWrapping="Wrap" HorizontalAlignment="Center"
+                <TextBlock Grid.Row="5" Grid.Column="0" Foreground="White" FontSize="18" TextWrapping="Wrap" HorizontalAlignment="Center"
                        VerticalAlignment="Center" Text="Type E" />
-                    <TextBlock Grid.Row="6" Grid.Column="0" Foreground="White" FontSize="18" TextWrapping="Wrap" HorizontalAlignment="Center"
+                <TextBlock Grid.Row="6" Grid.Column="0" Foreground="White" FontSize="18" TextWrapping="Wrap" HorizontalAlignment="Center"
                        VerticalAlignment="Center" Text="Type F" />
-                    <TextBlock Grid.Row="7" Grid.Column="0" Foreground="White" FontSize="18" TextWrapping="Wrap" HorizontalAlignment="Center"
+                <TextBlock Grid.Row="7" Grid.Column="0" Foreground="White" FontSize="18" TextWrapping="Wrap" HorizontalAlignment="Center"
                        VerticalAlignment="Center" Text="Type G" />
                 <TextBlock Grid.Row="8" Grid.Column="0" Foreground="White" FontSize="18" TextWrapping="Wrap" HorizontalAlignment="Center"
                        VerticalAlignment="Center" Text="Type H" />
+                <TextBlock Grid.Row="9" Grid.Column="0" Foreground="White" FontSize="18" TextWrapping="Wrap" HorizontalAlignment="Center"
+                       VerticalAlignment="Center" Text="Frequency" />
                 <TextBox Grid.Row="1" Grid.Column="1" VerticalContentAlignment="Center" FontSize="16">
                     <TextBox.ToolTip>
-                        <TextBlock Width="300" TextWrapping="Wrap">
-                            <Bold>Type A:</Bold> Residences, small commercial establishments, small public buildings and other units which generate light and/or occasional activity. (The weighting for this type of access is 1).
-                        </TextBlock>
+                        <TextBlock Width="300" TextWrapping="Wrap"><Bold><Run Text="Type A:"/></Bold><Run Text=" Residences, small commercial establishments, small public buildings and other units which generate light and/or occasional activity. (The weighting for this type of access is 1)."/></TextBlock>
                     </TextBox.ToolTip>
                 </TextBox>
                 <TextBox Grid.Row="2" Grid.Column="1" VerticalContentAlignment="Center" FontSize="16">
                     <TextBox.ToolTip>
-                        <TextBlock Width="300" TextWrapping="Wrap">
-                            <Bold>Type B:</Bold> Average commercial establishment, schools, caravan parks, light industries, public buildings and units generating activity which is either:<LineBreak />
-                                - continuous light<LineBreak/>
-                                - moderate at certain times, such as commuting hours<LineBreak />
-                                - substantial at infrequent intervals<LineBreak />
-                            (The weighting for this type of access is 2).
-
-                        </TextBlock>
-                    </TextBox.ToolTip>                    
+                        <TextBlock Width="300" TextWrapping="Wrap"><Bold><Run Text="Type B:"/></Bold><Run Text=" Average commercial establishment, schools, caravan parks, light industries, public buildings and units generating activity which is either:"/><LineBreak /><Run Text="- continuous light"/><LineBreak/><Run Text="- moderate at certain times, such as commuting hours"/><LineBreak /><Run Text="- substantial at infrequent intervals"/><LineBreak /><Run Text="(The weighting for this type of access is 2)."/></TextBlock>
+                    </TextBox.ToolTip>
                 </TextBox>
                 <TextBox Grid.Row="3" Grid.Column="1" VerticalContentAlignment="Center" FontSize="16">
                     <TextBox.ToolTip>
-                        <TextBlock Width="300" TextWrapping="Wrap">
-                            <Bold>Type C:</Bold> Heavy industry, schools, small shopping centres, petrol stations and other units generating continuous moderate activity or substantial activity at certain regular times. (The weighting for this type of access is 3).
-                        </TextBlock>
+                        <TextBlock Width="300" TextWrapping="Wrap"><Bold><Run Text="Type C:"/></Bold><Run Text=" Heavy industry, schools, small shopping centres, petrol stations and other units generating continuous moderate activity or substantial activity at certain regular times. (The weighting for this type of access is 3)."/></TextBlock>
                     </TextBox.ToolTip>
                 </TextBox>
                 <TextBox Grid.Row="4" Grid.Column="1" VerticalContentAlignment="Center" FontSize="16">
                     <TextBox.ToolTip>
-                        <TextBlock Width="300" TextWrapping="Wrap">
-                            <Bold>Type D:</Bold> Large shopping centres and other units generating substantial and continuous activity. Some large industries which are tourist attractions or for some other reason generate substantial traffic volumes would be included in this activity. (The weighting for this type of access is 4).                        </TextBlock>
+                        <TextBlock Width="300" TextWrapping="Wrap"><Bold><Run Text="Type D:"/></Bold><Run Text=" Large shopping centres and other units generating substantial and continuous activity. Some large industries which are tourist attractions or for some other reason generate substantial traffic volumes would be included in this activity. (The weighting for this type of access is 4)."/></TextBlock>
                     </TextBox.ToolTip>
                 </TextBox>
                 <TextBox Grid.Row="5" Grid.Column="1" VerticalContentAlignment="Center" FontSize="16">
                     <TextBox.ToolTip>
-                        <TextBlock Width="300" TextWrapping="Wrap">
-                            <Bold>Type E:</Bold> Unsignalised intersecting roads (including service road connections) of substantially lesser importance than the road being assessed, or intersecting roads where side traffic and turning movements have little effect on the traffic flow pattern of the road being considered. (The weighting for this type of access is 1).                        </TextBlock>
+                        <TextBlock Width="300" TextWrapping="Wrap"><Bold><Run Text="Type E:"/></Bold><Run Text=" Unsignalised intersecting roads (including service road connections) of substantially lesser importance than the road being assessed, or intersecting roads where side traffic and turning movements have little effect on the traffic flow pattern of the road being considered. (The weighting for this type of access is 1)."/></TextBlock>
                     </TextBox.ToolTip>
                 </TextBox>
                 <TextBox Grid.Row="6" Grid.Column="1" VerticalContentAlignment="Center" FontSize="16">
                     <TextBox.ToolTip>
-                        <TextBlock Width="300" TextWrapping="Wrap">
-                            <Bold>Type F:</Bold> Unsignalised intersecting roads (including service road connections) of lesser importance than the road being assessed but where the side road traffic and turning movements are such that the intersection has an appreciable effect on the traffic flow pattern of the road being considered. (The weighting for this type of access is 2).                        </TextBlock>
+                        <TextBlock Width="300" TextWrapping="Wrap"><Bold><Run Text="Type F:"/></Bold><Run Text=" Unsignalised intersecting roads (including service road connections) of lesser importance than the road being assessed but where the side road traffic and turning movements are such that the intersection has an appreciable effect on the traffic flow pattern of the road being considered. (The weighting for this type of access is 2)."/></TextBlock>
                     </TextBox.ToolTip>
                 </TextBox>
                 <TextBox Grid.Row="7" Grid.Column="1" VerticalContentAlignment="Center" FontSize="16">
                     <TextBox.ToolTip>
-                        <TextBlock Width="300" TextWrapping="Wrap">
-                            <Bold>Type G:</Bold> Unsignalised intersecting roads (including service road connections) of comparable or greater significance than the road being assessed. Intersections which have a pronounced effect on the traffic flow pattern of the road being considered. (The weighting for this type of access is 3).
-                        </TextBlock>
+                        <TextBlock Width="300" TextWrapping="Wrap"><Bold><Run Text="Type G:"/></Bold><Run Text=" Unsignalised intersecting roads (including service road connections) of comparable or greater significance than the road being assessed. Intersections which have a pronounced effect on the traffic flow pattern of the road being considered. (The weighting for this type of access is 3)."/></TextBlock>
                     </TextBox.ToolTip>
                 </TextBox>
                 <TextBox Grid.Row="8" Grid.Column="1" VerticalContentAlignment="Center" FontSize="16">
                     <TextBox.ToolTip>
-                        <TextBlock Width="300" TextWrapping="Wrap">
-                            <Bold>Type H:</Bold> Roundabouts, signalised intersecting roads and any at-grade rail crossings. (The weighting for this type of access is 3).
-                        </TextBlock>
+                        <TextBlock Width="300" TextWrapping="Wrap"><Bold><Run Text="Type H:"/></Bold><Run Text=" Roundabouts, signalised intersecting roads and any at-grade rail crossings. (The weighting for this type of access is 3)."/></TextBlock>
+                    </TextBox.ToolTip>
+                </TextBox>
+                <TextBox Grid.Row="9" Grid.Column="1" Text="{Binding Frequency}" VerticalContentAlignment="Center" FontSize="16">
+                    <TextBox.ToolTip>
+                        <TextBlock Width="300" TextWrapping="Wrap"><Bold><Run Text="Type H:"/></Bold><Run Text=" Roundabouts, signalised intersecting roads and any at-grade rail crossings. (The weighting for this type of access is 3)."/></TextBlock>
                     </TextBox.ToolTip>
                 </TextBox>
             </Grid>

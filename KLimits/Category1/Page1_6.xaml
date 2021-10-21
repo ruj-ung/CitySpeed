@@ -23,8 +23,8 @@
                        Text="     The width of the median is:" />
 
             <StackPanel>
-                <RadioButton Content="Less than 4.5 m " Foreground="White" FontSize="18" IsChecked="True" Margin="30,0,0,0"/>
-                <RadioButton Content="4.5 m or more " Foreground="White" FontSize="18" Margin="30,0,0,0"/>
+                <RadioButton Content="Less than 4.5 m " Foreground="White" FontSize="18" IsChecked="True" Margin="30,0,0,0" Click="Radio1_Click"/>
+                <RadioButton Content="4.5 m or more " Foreground="White" FontSize="18" Margin="30,0,0,0" Click="Radio2_Click"/>
             </StackPanel>
         </StackPanel>
         <Button x:Name="buttonNext" Content="Next" Height="30" Width="50" VerticalAlignment="Bottom" HorizontalAlignment="Right" Opacity="0.5" Click="buttonNext_Click"/>

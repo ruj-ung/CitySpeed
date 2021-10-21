@@ -25,9 +25,9 @@
                        Text="     Are consistent access restrictions applicable to this road section?" />
 
 
-            <RadioButton Content="No restrictions" Foreground="White" FontSize="18" IsChecked="True" Margin="30,0,0,0"/>
-            <RadioButton Content="Restrictions to one side only" Foreground="White" FontSize="18" Margin="30,0,0,0"/>
-            <RadioButton Content="Restrictions to both sides" Foreground="White" FontSize="18" Margin="30,0,0,0"/>
+            <RadioButton Content="Restrictions to both sides" Foreground="White" FontSize="18" IsChecked="True" Margin="30,0,0,0" Click="Radio1_Click"/>
+            <RadioButton Content="Restrictions to one side only" Foreground="White" FontSize="18" Margin="30,0,0,0" Click="Radio2_Click"/>
+            <RadioButton Content="No restrictions" Foreground="White" FontSize="18"  Margin="30,0,0,0" Click="Radio3_Click"/>
 
         </StackPanel>
         <Button x:Name="buttonNext" Content="Next" Height="30" Width="50" VerticalAlignment="Bottom" HorizontalAlignment="Right" Opacity="0.5" Click="buttonNext_Click"/>

@@ -23,13 +23,13 @@
                        Text="     This road's function is:" />
 
             <StackPanel>
-                <RadioButton Content="Freeway" Foreground="White" FontSize="18" IsChecked="True"/>
-                <RadioButton Content="Arterial/ Major Road" Foreground="White" FontSize="18"/>
-                <RadioButton Content="Collector" Foreground="White" FontSize="18"/>
-                <RadioButton Content="Local Access" Foreground="White" FontSize="18"/>
-                <RadioButton Content="Rural Local" Foreground="White" FontSize="18"/>
-                <RadioButton Content="Car park" Foreground="White" FontSize="18"/>
-                <RadioButton Content="Shared zone" Foreground="White" FontSize="18"/>
+                <RadioButton Content="Freeway" Foreground="White" FontSize="18" Click="Radio1_Click"/>
+                <RadioButton Content="Arterial/ Major Road" Foreground="White" FontSize="18" Click="Radio2_Click" IsChecked="True"/>
+                <RadioButton Content="Collector" Foreground="White" FontSize="18" Click="Radio3_Click"/>
+                <RadioButton Content="Local Access" Foreground="White" FontSize="18" Click="Radio4_Click"/>
+                <RadioButton Content="Rural Local" Foreground="White" FontSize="18" Click="Radio5_Click"/>
+                <RadioButton Content="Car park" Foreground="White" FontSize="18" Click="Radio6_Click"/>
+                <RadioButton Content="Shared zone" Foreground="White" FontSize="18" Click="Radio7_Click" />
             </StackPanel>
         </StackPanel>
         <Button x:Name="buttonNext" Content="Next" Height="30" Width="50" VerticalAlignment="Bottom" HorizontalAlignment="Right" Opacity="0.5" Click="buttonNext_Click"/>

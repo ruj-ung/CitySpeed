@@ -35,5 +35,23 @@ namespace KLimits.Category2
             MainWindow mainwnd = (MainWindow)System.Windows.Application.Current.MainWindow;
             mainwnd.MainFrame.Content = mainwnd.page2_4;
         }
+
+        private void Radio1_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwnd = (MainWindow)System.Windows.Application.Current.MainWindow;
+            mainwnd.parameters.AccessRestictions = 1;
+        }
+
+        private void Radio2_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwnd = (MainWindow)System.Windows.Application.Current.MainWindow;
+            mainwnd.parameters.AccessRestictions = 2;
+        }
+
+        private void Radio3_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwnd = (MainWindow)System.Windows.Application.Current.MainWindow;
+            mainwnd.parameters.AccessRestictions = 3;
+        }
     }
 }

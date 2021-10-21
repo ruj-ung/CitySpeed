@@ -7,24 +7,27 @@
     <ApplicationIcon>KKU.ico</ApplicationIcon>
     <Win32Resource />
   </PropertyGroup>
-
+  
   <ItemGroup>
-    <Resource Include="Category2\FullyBuiltUp.png" >
+    <Resource Include="Category2\FullyBuiltUp.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>      
     </Resource>
-    <Resource Include="Category2\PartiallyBuiltUp.png" >
+    <Resource Include="Category2\PartiallyBuiltUp.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>      
     </Resource>
-    <Resource Include="Category2\SparselyBuiltUp.png" >
+    <Resource Include="Category2\SparselyBuiltUp.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>      
     </Resource>
-    <Resource Include="Category2\Hamlet.png" >
+    <Resource Include="Category2\Hamlet.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>      
     </Resource>
-    <Resource Include="Category2\Rural.png" >
+    <Resource Include="Category2\Rural.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>      
     </Resource>
     <Resource Include="KKU.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="KKU-logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
@@ -36,6 +39,10 @@
     <Folder Include="Category4\" />
     <Folder Include="Category5\" />
     <Folder Include="Category6\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.3.0-ci62" />
   </ItemGroup>
 
 </Project>

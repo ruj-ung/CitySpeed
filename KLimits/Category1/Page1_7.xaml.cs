@@ -35,5 +35,17 @@ namespace KLimits
             MainWindow mainwnd = (MainWindow)System.Windows.Application.Current.MainWindow;
             mainwnd.MainFrame.Content = mainwnd.page1_8;
         }
+
+        private void Radio1_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwnd = (MainWindow)System.Windows.Application.Current.MainWindow;
+            mainwnd.parameters.ProtectionForRigthTurn = 1;
+        }
+
+        private void Radio2_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwnd = (MainWindow)System.Windows.Application.Current.MainWindow;
+            mainwnd.parameters.ProtectionForRigthTurn = 2;
+        }
     }
 }

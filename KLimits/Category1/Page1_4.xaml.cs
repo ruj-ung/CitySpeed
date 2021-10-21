@@ -35,5 +35,41 @@ namespace KLimits
             MainWindow mainwnd = (MainWindow)System.Windows.Application.Current.MainWindow;
             mainwnd.MainFrame.Content = mainwnd.page1_5;
         }
+
+        private void Radio1_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwnd = (MainWindow)System.Windows.Application.Current.MainWindow;
+            mainwnd.parameters.RoadFunction = 1;
+        }
+        private void Radio2_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwnd = (MainWindow)System.Windows.Application.Current.MainWindow;
+            mainwnd.parameters.RoadFunction = 2;
+        }
+        private void Radio3_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwnd = (MainWindow)System.Windows.Application.Current.MainWindow;
+            mainwnd.parameters.RoadFunction = 3;
+        }
+        private void Radio4_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwnd = (MainWindow)System.Windows.Application.Current.MainWindow;
+            mainwnd.parameters.RoadFunction = 4;
+        }
+        private void Radio5_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwnd = (MainWindow)System.Windows.Application.Current.MainWindow;
+            mainwnd.parameters.RoadFunction = 5;
+        }
+        private void Radio6_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwnd = (MainWindow)System.Windows.Application.Current.MainWindow;
+            mainwnd.parameters.RoadFunction = 6;
+        }
+        private void Radio7_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwnd = (MainWindow)System.Windows.Application.Current.MainWindow;
+            mainwnd.parameters.RoadFunction = 7;
+        }
     }
 }
