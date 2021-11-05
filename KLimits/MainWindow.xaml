@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KLimits"
         mc:Ignorable="d"
-        Title="KLimits Version 1.0" Height="600" Width="900" Icon="/KKU.ico">
+        Title="KLimits Version 1.0" Height="600" Width="900" Icon="/KKU.ico" MinHeight="600" MinWidth="900">
     <Grid>
-        <StackPanel Orientation="Horizontal" Height="35" Width="850" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <StackPanel Orientation="Horizontal" Height="35" Width="850" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Button x:Name="Cat1" Content="Road &amp; Infrastructures" MinWidth="100" Background="DarkOrange" Click="Button_Click_1"/>
             <Button x:Name="Cat2" Content="Land use &amp; Accessibility" MinWidth="100" Background="DarkOrange" Margin="2,0,0,0" Click="Button_Click2"/>
             <Button x:Name="Cat3"  Content="Pedestrians" MinWidth="100" Background="DarkOrange" Margin="2,0,0,0" Click="Button_Click3"/>
@@ -16,6 +16,9 @@
             <Button x:Name="Cat6" Content="Accident" MinWidth="100" Background="DarkOrange" Margin="2,0,0,0" Click="Button_Click6"/>
             <Button x:Name="Result" Content="Speed" MinWidth="100" Background="DarkOrange" Margin="2,0,0,0" Click="Button_Click7"/>
         </StackPanel>
-        <Frame x:Name="MainFrame" Margin="0,35,0,0" />
+        <Image Source="project.jpg" Margin="35,35,35,0" />
+        <!--<TextBlock Text="โปรแกรมนี้เป็นส่วนหนึ่งของ" FontSize="23" Height="35" Width="300" TextAlignment="Center" Foreground="BlueViolet" Margin="300,54,300,495" />-->
+        <Frame x:Name="MainFrame" Margin="0,35,0,0" Background="{x:Null}"/>
+
     </Grid>
 </Window>

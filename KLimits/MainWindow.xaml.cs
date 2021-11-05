@@ -598,7 +598,7 @@ namespace KLimits
                     break;
                 case 5:
                     if (data.Frequency < 1.0) parameters.RoadsideAccesssFrequency = 1;
-                    else if (data.Frequency < 1.25) parameters.RoadsideAccesssFrequency = 2;
+                    else if (data.Frequency < 2.5) parameters.RoadsideAccesssFrequency = 2;
                     else parameters.RoadsideAccesssFrequency = 3;
                     break;
             }
